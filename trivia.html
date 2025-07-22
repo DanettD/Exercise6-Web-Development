@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<TITLE>Dunkin Danett's</TITLE>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</HEAD>
+<BODY>
+  
+<!-- first row -->
+<TABLE border=1 WIDTH =900 HEIGHT=400>
+<TR> 
+<TH colspan = 3 bgcolor=#3c475c color = white> <span class=white>Dunkin' Danett's</span> </TH>
+</TR> 
+  
+<TR> <!-- second row -->
+  <TD colspan=3 bgcolor=#bfa463 align=center> <span class=boldblack><a href="index.html" style="color: inherit; text-decoration: none;">HOME</a> | <a href="portfolio.html" style="color: inherit; text-decoration: none;">PORTFOLIO</a> | <a href="trivia.html" style="color: inherit; text-decoration: none;">TRIVIA</a></span> </TD>
+</TR>
+  
+<TR> <!-- third row -->
+<TD width=200 height= 250 bgcolor = #f0f4f8> <UL> Useful Links </UL>
+<LI><a HREF="https://www.ritsumei.ac.jp" target="_blank">Ritsumeikan
+University</a></LI>
+<LI><a HREF="https://ct.ritsumei.ac.jp/ct/home" target="_blank">Manaba+R</a></LI>
+<LI><a HREF="https://lms.ritsumei.ac.jp/my/" target="_blank">Moodle</a></LI>
+</UL> </TH>
+  <TH width = 500 height = 250 bgcolor = #f0f4f8> 
+  <h2>Whats Your Grade?</h2>
+    <h3>Grade Checker</h3>
+
+  <span>Attendance (10%):</span><br>
+  <input type="number" id="attendance" placeholder="0-100"><br><br>
+
+  <span>Assignments (20%):</span><br>
+  <input type="number" id="assignments" placeholder="0-100"><br><br>
+
+  <span>Midterms (35%):</span><br>
+  <input type="number" id="midterms" placeholder="0-100"><br><br>
+
+  <span>Finals (35%):</span><br>
+  <input type="number" id="finals" placeholder="0-100"><br><br>
+
+  <button onclick="calculateGrade()">Submit</button>
+
+  <script src="script.js"></script>
+  </TH>
+<TD width = 200 height = 250 bgcolor = #f0f4f8> Contact Me: </br></br> Name: </br> <textarea id="name" name="name" rows="1" cols="20" placeholder="Write your message here..."></textarea> </br> Email: </br><textarea id="email" name="email" rows="1" cols="20" placeholder="Write your message here..."></textarea></br> Message: <textarea id="message" name="message" rows="1" cols="20" placeholder="Write your message here..."></textarea>  <button id="submitBtn" onclick="submitClicked()">Submit</button>
+  <button onclick="resetFields()">Reset</button>
+<script>
+    function submitClicked() {
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Submitted!';
+    }
+    
+    function resetFields() {
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    }
+  </script>
+  </TH></br>
+</TR> 
+  
+<TR> <!-- fourth row -->
+  <TH colspan = 3 bgcolor=#3c475c> <span class=white2> July 15 2025 </span> <br><a HREF="https://www.instagram.com/danettdellano?igsh=YmVscmluNDlhcXdk&utm_source=qr">Instagram</a> </TH>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
