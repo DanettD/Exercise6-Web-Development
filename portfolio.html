@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE>Dunkin Danett's</TITLE>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</HEAD>
+<BODY>
+  
+<!-- first row -->
+<TABLE border=1 WIDTH =900 HEIGHT=400>
+<TR> 
+<TH colspan = 3 bgcolor=#3c475c color = white> <span class=white>Dunkin' Danett's</span> </TH>
+</TR> 
+  
+<TR> <!-- second row -->
+  <TD colspan=3 bgcolor=#bfa463 align=center> <span class=boldblack><a href="index.html" style="color: inherit; text-decoration: none;">HOME</a> | <a href="portfolio.html" style="color: inherit; text-decoration: none;">PORTFOLIO</a> | <a href="page3.html" style="color: inherit; text-decoration: none;">TRIVIA</a></span> </TD>
+</TR>
+  
+<TR> <!-- third row -->
+<TD width=200 height= 250 bgcolor = #f0f4f8> <UL> Useful Links </UL>
+<LI><a HREF="https://www.ritsumei.ac.jp" target="_blank">Ritsumeikan
+University</a></LI>
+<LI><a HREF="https://ct.ritsumei.ac.jp/ct/home" target="_blank">Manaba+R</a></LI>
+<LI><a HREF="https://lms.ritsumei.ac.jp/my/" target="_blank">Moodle</a></LI>
+</UL> </TH>
+  <TD width = 500 height = 250 bgcolor = #f0f4f8> 
+  <TABLE border=1 width = 500 height=250>
+    <Tr>
+      <td width= 30>No.</td><td width=100>Name</td><td width=270>Description</td><td>Date</td>
+    </Tr>
+    <Tr>
+      <td width= 30>1</td><td width=100>Shell Nxplorer Engineering Challenge</td><td width=170>A competition and pitch presentation in formulating a sustainable product by precisely following the engineering method held by Shell</td><td>2023</td>
+    </Tr>
+    <Tr>
+      <td width= 30>2</td><td width=100>PEN Wordlwide Virtual Enterprise Most Outstanding Presentation Award</td><td width=170>A business plan competition, simulating a virtual business from scratch from product development, business report, financing, prototypes, HR, marketing, and website creation. </td><td>2023</td>
+    </Tr>
+    <Tr>
+      <td width= 30>3</td><td width=100>INFINITICS Mathematics Intelligence Race</td><td width=170>A University-held mathematic competition</td><td>2023</td>
+    </Tr>
+    <Tr>
+      <td width= 30>4</td><td width=100>Python Computational Workshop</td><td width=170>A workshop held to discover python data processing and data visualization</td><td>2023</td>
+    </Tr>
+    <Tr>
+      <td width= 30>5</td><td width=100>Virtual Enterprise Global Social Media Competition Gold Award</td><td width=170>A global competition in creating a social media advertisement of the virtual enterprise company, displaying values, ethics, and products.</td><td>2023</td>
+    </Tr>
+  </TABLE>
+  </TH>
+<TD width = 200 height = 250 bgcolor = #f0f4f8> Contact Me: </br></br> Name: </br> <textarea id="name" name="name" rows="1" cols="20" placeholder="Write your message here..."></textarea> </br> Email: </br><textarea id="email" name="email" rows="1" cols="20" placeholder="Write your message here..."></textarea></br> Message: <textarea id="message" name="message" rows="1" cols="20" placeholder="Write your message here..."></textarea>  <button id="submitBtn" onclick="submitClicked()">Submit</button>
+  <button onclick="resetFields()">Reset</button>
+<script>
+    function submitClicked() {
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Submitted!';
+    }
+    
+    function resetFields() {
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    }
+  </script>
+  </TH></br>
+</TR> 
+  
+<TR> <!-- fourth row -->
+  <TH colspan = 3 bgcolor=#3c475c> <span class=white2> July 15 2025 </span> <br><a HREF="https://www.instagram.com/danettdellano?igsh=YmVscmluNDlhcXdk&utm_source=qr">Instagram</a> </TH>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
